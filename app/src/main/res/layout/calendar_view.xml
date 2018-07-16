@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:id="@+id/MainActivity"
+              >·
+
+    <RelativeLayout
+        android:id="@+id/calendarHeader"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000000"
+        >
+        <!--使用这个linearLayout只是为了占空间-->
+        <LinearLayout
+            android:id="@+id/linear"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+        </LinearLayout>
+        <ImageView
+            android:layout_below="@+id/linear"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/preMonth"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/previous_month"/>
+
+        <ImageView
+            android:layout_below="@+id/linear"
+            android:layout_marginRight="5dp"
+            android:id="@+id/nextMonth"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/next_month"/>
+
+        <TextView
+            android:layout_below="@+id/linear"
+            android:id="@+id/ymDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Jun 2016"
+            android:textColor="#00FFFF"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/calendarWeek"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/calendarHeader">
+
+        <TextView
+            android:id="@+id/Sun"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#BC1717"
+            android:gravity="center"
+            android:text="日"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/Mon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ADEAEA"
+            android:gravity="center"
+            android:text="一"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/Tue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ADEAEA"
+            android:gravity="center"
+            android:text="二"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/Wed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ADEAEA"
+            android:gravity="center"
+            android:text="三"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/Thurs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ADEAEA"
+            android:gravity="center"
+            android:text="四"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/Fri"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ADEAEA"
+            android:gravity="center"
+            android:text="五"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/Sat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#007FFF"
+            android:gravity="center"
+            android:text="六"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/calendarDays"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/calendarWeek"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:numColumns="7"
+        android:text="">
+    </GridView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/list"
+        app:backgroundTint="#FFFF00"
+        app:rippleColor="#CFB53B"
+        app:fabSize="auto"
+        app:pressedTranslationZ="30dp"
+        app:elevation="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/edit"
+        app:backgroundTint="#00FF00"
+        app:rippleColor="#238E68"
+        app:fabSize="auto"
+        app:pressedTranslationZ="30dp"
+        app:elevation="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"/>
+</RelativeLayout>
