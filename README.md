@@ -3,7 +3,7 @@
 [![license](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/Yuziquan/WCCalendar2/blob/master/LICENSE)
 
 <br/>
-![app_icon]()
+![app_icon](https://github.com/Yuziquan/WCCalendar2/blob/master/Screenshots/app_icon.png)
 
 ### 一、项目功能
 
