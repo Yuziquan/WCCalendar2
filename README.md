@@ -2,6 +2,9 @@
 [![WCCalendar2](https://img.shields.io/badge/WCCalendar2-v1.0.0-green.svg)](https://github.com/Yuziquan/WCCalendar2)
 [![license](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/Yuziquan/WCCalendar2/blob/master/LICENSE)
 
+<br/>
+![app_icon]()
+
 ### 一、项目功能
 
 **一款带壁纸的自定义日历APP**
