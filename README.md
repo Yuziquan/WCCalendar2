@@ -6,8 +6,6 @@
 
 <img src="https://github.com/Yuziquan/WCCalendar2/blob/master/Screenshots/app_icon.png" width=150 height=150 />
 
-![app_icon]()
-
 ### 一、项目功能
 
 **一款带壁纸的自定义日历APP**
